@@ -1,8 +1,9 @@
 import React from 'react';
+import Scene from '../components/Scene';
 
 function GamePage() {
     return (
-        <div>game page</div>
+        <Scene/>
     )
 }
 

@@ -17,13 +17,13 @@ function SelectText({texts, onEnded}) {
             if(e.key === 'Enter' || e.key === ' ') {
                 onEnded(selectedIndex);
             }
-            if(e.key === 'ArrowUp') {
+            if(e.key === 'ArrowUp' || e.key === 'ArrowLeft') {
                 if(selectedIndex > 0) {
                     setSelectedIndex(prev => prev - 1);
                 } else if(selectedIndex === 0) {
                     setSelectedIndex(texts.length - 1); // 마지막 선택지로 이동
                 }
-            } else if(e.key === 'ArrowDown') {
+            } else if(e.key === 'ArrowDown' || e.key === 'ArrowRight') {
                 if(selectedIndex < texts.length - 1) {
                     setSelectedIndex(prev => prev + 1);
                 } else if(selectedIndex === texts.length - 1) {

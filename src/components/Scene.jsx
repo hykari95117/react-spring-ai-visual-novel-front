@@ -2,6 +2,7 @@ import React from 'react';
 import './scene.css';
 import TypingText from './TypingText';
 import SelectText from './SelectText';
+import PlaySong from './PlaySong';
 
 // const chat = {
 //     character: {
@@ -26,6 +27,7 @@ function Scene({backgroundUrl, chats, chatIndex, onEnded}) {
     
     return (
         <div className={'scene-container'}>
+            <PlaySong src={chat.music} loop={true}/>
             <div className={'scene-background'} style={{
                 backgroundImage: `url(${backgroundUrl})`
             }}

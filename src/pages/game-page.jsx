@@ -31,7 +31,9 @@ function GamePage() {
                 },
                 {
                     character: narration,
-                    message: "민수가 아침에 일어났다. 휴대폰에는 100개가 넘는 알림이 와 있다."
+                    message: "민수가 아침에 일어났다. 휴대폰에는 100개가 넘는 알림이 와 있다.",
+                    music: "music/phone_vibe.mp3"
+
                 }
             ],
             nextScene: "Scene 2"
